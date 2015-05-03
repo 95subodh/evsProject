@@ -53,6 +53,7 @@
             android:parentActivityName="project.is.IrVerde.ActivityLogin" >
         </activity>
 
+
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
@@ -63,12 +64,18 @@
 
         <activity
             android:name=".About"
-            android:label="@string/title_activity_upload_song"
+            android:label="Ir Verde"
             android:parentActivityName="project.is.IrVerde.MainActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="project.is.IrVerde.MainActivity" />
         </activity>
+
+        <activity
+            android:name=".CompareActivity"
+            android:label="@string/app_name"
+            />
+
     </application>
 
 </manifest>

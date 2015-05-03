@@ -1,11 +1,13 @@
 package project.is.IrVerde;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -14,12 +16,31 @@ public class MainActivityListAdapter extends RecyclerView.Adapter<MainActivityLi
     private Context context;
     ArrayList<MainActivityListItem> mDataSet;
 
-    public static class ViewHolder extends RecyclerView.ViewHolder {
+    public static class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
         // each data item is just a string in this case
         public TextView mTitle;
-        public ViewHolder(View view) {
+        Context mContext;
+        public ViewHolder(View view,Context c) {
             super(view);
+            mContext = c;
             mTitle = (TextView) view.findViewById(R.id.title);
+            view.setClickable(true);
+            view.setOnClickListener(this);
+        }
+
+        @Override
+        public void onClick(View v) {
+            //Toast.makeText(context,"Item Clicked is:"+MainActivity,Toast.LENGTH_SHORT);
+            Toast mToast;
+            int position=getPosition();
+            switch (position){
+                case 0: mToast = Toast.makeText(mContext,"item 0 clicked",Toast.LENGTH_LONG);mToast.show();
+                    Intent intent = new Intent(mContext, CompareActivity.class);
+                    mContext.startActivity(intent);
+                    break;
+            }
+            
+
         }
     }
 
@@ -42,7 +63,7 @@ public class MainActivityListAdapter extends RecyclerView.Adapter<MainActivityLi
                 .inflate(R.layout.activity_main_list_item, parent, false);
         // set the view's size, margins, paddings and layout parameters
         //TextView mTitleTextView = (TextView) v.findViewById(R.id.title);
-        ViewHolder vh = new ViewHolder(v);
+        ViewHolder vh = new ViewHolder(v,context);
         return vh;
     }
 
