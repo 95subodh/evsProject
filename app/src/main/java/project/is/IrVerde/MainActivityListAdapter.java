@@ -6,20 +6,32 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
 public class MainActivityListAdapter extends RecyclerView.Adapter<MainActivityListAdapter.ViewHolder> {
 
     private Context context;
-    ArrayList<MainActivityListItem> mDataSet;
-
-    public static class ViewHolder extends RecyclerView.ViewHolder {
+    private String Titles[];
+    public static class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
         // each data item is just a string in this case
+        Context mContext;
         public TextView mTitle;
-        public ViewHolder(View view) {
+        public ViewHolder(View view,Context c) {
             super(view);
+            mContext = c;
             mTitle = (TextView) view.findViewById(R.id.title);
+            view.setClickable(true);
+            view.setOnClickListener(this);
+        }
+
+        @Override
+        public void onClick(View v) {
+            Toast.makeText(getClass(),"Item Clicked is:" + MainActivity.na[getPosition()-1],Toast.LENGTH_SHORT).show();
+            int id=getPosition();
+
+
         }
     }
 
