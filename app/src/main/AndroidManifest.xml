@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="project.is.joggler" >
+    package="project.is.IrVerde" >
 
     <uses-feature
         android:glEsVersion="0x00020000"
@@ -38,7 +38,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name=".ActivityLogin"
+            android:name="project.is.IrVerde.ActivityLogin"
             android:label="@string/title_activity_login"
             android:windowSoftInputMode="adjustResize|stateHidden" >
             <intent-filter>
@@ -48,38 +48,26 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name="project.is.IrVerde.MainActivity"
             android:label="@string/app_name"
-            android:parentActivityName=".ActivityLogin" >
+            android:parentActivityName="project.is.IrVerde.ActivityLogin" >
         </activity>
 
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
 
-        <activity
-            android:name=".ActivityRegister"
-            android:label="@string/title_activity_activity_register" >
-        </activity>
-
         <meta-data
             android:name="com.google.android.maps.v2.API_KEY"
             android:value="@string/google_maps_key" />
 
         <activity
-            android:name=".MapsActivity"
-            android:label="@string/title_activity_maps" >
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="project.is.joggler.MainActivity" />
-        </activity>
-        <activity
-            android:name=".UploadSong"
+            android:name=".About"
             android:label="@string/title_activity_upload_song"
-            android:parentActivityName=".MainActivity" >
+            android:parentActivityName="project.is.IrVerde.MainActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="project.is.joggler.MainActivity" />
+                android:value="project.is.IrVerde.MainActivity" />
         </activity>
     </application>
 

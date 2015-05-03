@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">joggler</string>
+    <string name="app_name">Ir Verde</string>
     <string name="title_activity_activity_register">Joggler</string>
     <string name="hello_world">Hello world!</string>
     <string name="drawer_open">Menu opened</string>

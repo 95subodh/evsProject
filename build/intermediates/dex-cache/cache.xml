@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/subodhyadav/Documents/Developer/joggler/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/21.0.3/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="00b0b7233e1ec64acebfac40d4983d32d4712426">
+        <dex dex="/Users/subodhyadav/Documents/Developer/joggler/app/build/intermediates/pre-dexed/debug/classes-6619f0ece5b7150da0599714f21138851868d9ed.jar" />
+    </item>
+    <item
+        jar="/Users/subodhyadav/Documents/Developer/joggler/app/libs/nineoldandroids-2.4.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="59f19e43354d32de831379c23ce03bb259a4c2b7">
+        <dex dex="/Users/subodhyadav/Documents/Developer/joggler/app/build/intermediates/pre-dexed/debug/nineoldandroids-2.4.0-d7f1dc0465d2ad1b3b681f242cda5864d5b0edfb.jar" />
+    </item>
+    <item
+        jar="/Users/subodhyadav/Documents/Developer/joggler/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="81d42bf983a8741f4888a6e333e454e4a5e0eeb7">
+        <dex dex="/Users/subodhyadav/Documents/Developer/joggler/app/build/intermediates/pre-dexed/debug/classes-e1a0acaf1a815521af0f56ac9b57a15f3a17c4e3.jar" />
+    </item>
+    <item
+        jar="/Users/subodhyadav/Documents/Developer/joggler/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/21.0.3/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="4b8945fc23a7461c6fdde15753456d64b0a9358b">
+        <dex dex="/Users/subodhyadav/Documents/Developer/joggler/app/build/intermediates/pre-dexed/debug/classes-14380834fb8aeb73304ef3fe3c107f9b79afb5ed.jar" />
+    </item>
+    <item
+        jar="/Users/subodhyadav/Documents/Developer/joggler/app/build/intermediates/exploded-aar/com.mikepenz.iconics/library/0.9.1/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="4054f18e4e7d1c148fa71ded4b17348428273e21">
+        <dex dex="/Users/subodhyadav/Documents/Developer/joggler/app/build/intermediates/pre-dexed/debug/classes-7ebbf5efec36842aa6436c8f645db959808fa25e.jar" />
+    </item>
+    <item
+        jar="/Users/subodhyadav/Documents/Developer/joggler/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
+        <dex dex="/Users/subodhyadav/Documents/Developer/joggler/app/build/intermediates/pre-dexed/debug/classes-5e7e14d1d4e0aa44b869211ffe3ae785e42fa903.jar" />
+    </item>
+    <item
+        jar="/Users/subodhyadav/Documents/Developer/joggler/app/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.1.71/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="0f6d5c1ef2e982c3b7858408e3df389cf5d202da">
+        <dex dex="/Users/subodhyadav/Documents/Developer/joggler/app/build/intermediates/pre-dexed/debug/classes-09b3c02ccca8270885420251868214d1fb3bc109.jar" />
+    </item>
+    <item
+        jar="/sdk/extras/android/m2repository/com/android/support/support-annotations/21.0.3/support-annotations-21.0.3.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="4b74cefe1f0c1b819e7260c8627a14674e37fd35">
+        <dex dex="/Users/subodhyadav/Documents/Developer/joggler/app/build/intermediates/pre-dexed/debug/support-annotations-21.0.3-97c098f60abc3466573ee1d211cd31f08a3c3a05.jar" />
+    </item>
+    <item
+        jar="/Users/subodhyadav/Documents/Developer/joggler/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/libs/internal_impl-21.0.3.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="01ec05bfbafcc07646ba813000bf2ef11742dd03">
+        <dex dex="/Users/subodhyadav/Documents/Developer/joggler/app/build/intermediates/pre-dexed/debug/internal_impl-21.0.3-251582fe4a8ca17d8ab8da8f4bffbc67461a2645.jar" />
+    </item>
+    <item
+        jar="/Users/subodhyadav/Documents/Developer/joggler/app/libs/jackson-all-1.8.10.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="eff775c068cad98be2691ae73e7416ede1765512">
+        <dex dex="/Users/subodhyadav/Documents/Developer/joggler/app/build/intermediates/pre-dexed/debug/jackson-all-1.8.10-6c4b23deda4336b3020ccc5f3ffc902c83a8711e.jar" />
+    </item>
+
+</items>

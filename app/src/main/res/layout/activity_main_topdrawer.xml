@@ -7,7 +7,7 @@
                                         android:fitsSystemWindows="true"
                                         android:layout_height="match_parent">
 
-    <project.is.joggler.ScrimInsetsFrameLayout
+    <project.is.IrVerde.ScrimInsetsFrameLayout
         android:id="@+id/scrimInsetsFrameLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -16,7 +16,7 @@
         android:elevation="10dp"
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto">
-    </project.is.joggler.ScrimInsetsFrameLayout>
+    </project.is.IrVerde.ScrimInsetsFrameLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -41,13 +41,13 @@
                 android:layout_height="match_parent"
                 android:divider="@android:color/transparent"/>
 
-            <project.is.joggler.FloatingActionButton
+            <project.is.IrVerde.FloatingActionButton
                 android:id="@+id/fab"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom|right"
                 android:layout_margin="16dp"
-                android:src="@drawable/ic_action_upload"
+                android:src="@drawable/ic_action_up"
                 fab:fab_colorNormal="@color/material_blue_500"
                 fab:fab_colorPressed="@color/material_blue_600"
                 fab:fab_colorRipple="@color/material_blue_grey_800"
@@ -60,7 +60,7 @@
 
     <fragment
         android:id="@+id/fragment_drawer"
-        android:name="project.is.joggler.NavigationDrawerFragment"
+        android:name="project.is.IrVerde.NavigationDrawerFragment"
         android:layout_width="@dimen/navigation_drawer_width"
         android:layout_height="match_parent"
         android:layout_gravity="start"
