@@ -38,12 +38,12 @@ public class CompareActivity extends ActionBarActivity implements NavigationDraw
 
         //setting data in it.
         ArrayList<MainActivityListItem> mainActivityList = new ArrayList<MainActivityListItem>();
-        MainActivityListItem mainActivityListItem1 = new MainActivityListItem("TV's");
-        MainActivityListItem mainActivityListItem2 = new MainActivityListItem("Refrigerator's");
-        MainActivityListItem mainActivityListItem3 = new MainActivityListItem("Air Conditioners");
-        MainActivityListItem mainActivityListItem4 = new MainActivityListItem("Microwave");
-        MainActivityListItem mainActivityListItem5 = new MainActivityListItem("Washing Machine");
-        MainActivityListItem mainActivityListItem6 = new MainActivityListItem("Bulbs");
+        MainActivityListItem mainActivityListItem1 = new MainActivityListItem("1");
+        MainActivityListItem mainActivityListItem2 = new MainActivityListItem("2");
+        MainActivityListItem mainActivityListItem3 = new MainActivityListItem("3");
+        MainActivityListItem mainActivityListItem4 = new MainActivityListItem("4");
+        MainActivityListItem mainActivityListItem5 = new MainActivityListItem("5");
+        MainActivityListItem mainActivityListItem6 = new MainActivityListItem("6");
         //MainActivityListItem mainActivityListItem7 = new MainActivityListItem("Chimney");
         //MainActivityListItem mainActivityListItem8 = new MainActivityListItem("Cooler");
         mainActivityList.add(mainActivityListItem1);

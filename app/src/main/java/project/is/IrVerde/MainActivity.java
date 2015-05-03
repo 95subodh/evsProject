@@ -12,19 +12,21 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
 
+import java.util.ArrayList;
+
 
 public class MainActivity extends ActionBarActivity implements NavigationDrawerCallbacks {
 
-    private static String[] navItems;
+//    private static String[] navItems;
     private Toolbar mToolbar;
     private NavigationDrawerFragment mNavigationDrawerFragment;
     private RecyclerView.LayoutManager mLinearLayoutManager;
     RecyclerView mRecycleView;
-    RecyclerView.Adapter mAdapter;public static String[] getNavItems() {
-    return navItems;
-}public static void setNavItems(String[] navItems) {
-    MainActivity.navItems = navItems;
-}
+//    RecyclerView.Adapter mAdapter;public static String[] getNavItems() {
+//    return navItems;
+//}public static void setNavItems(String[] navItems) {
+//    MainActivity.navItems = navItems;
+//}
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,27 +40,26 @@ public class MainActivity extends ActionBarActivity implements NavigationDrawerC
         mLinearLayoutManager = new LinearLayoutManager(this);
         mRecycleView.setLayoutManager(mLinearLayoutManager);
 
-        setNavItems(new String[]{"TV's","Refrigerator", "Air Conditioner", "Microwave","Washing Machine","Bulbs","Chimney","Cooler"});
+//        setNavItems(new String[]{"TV's","Refrigerator", "Air Conditioner", "Microwave","Washing Machine","Bulbs","Chimney","Cooler"});
         //setting data in it.
-//        ArrayList<MainActivityListItem> mainActivityList = new ArrayList<MainActivityListItem>();
-//        MainActivityListItem mainActivityListItem1 = new MainActivityListItem("TV's");
-//        MainActivityListItem mainActivityListItem2 = new MainActivityListItem("Refrigerator's");
-//        MainActivityListItem mainActivityListItem3 = new MainActivityListItem("Air Conditioners");
-//        MainActivityListItem mainActivityListItem4 = new MainActivityListItem("Microwave");
-//        MainActivityListItem mainActivityListItem5 = new MainActivityListItem("Washing Machine");
-//        MainActivityListItem mainActivityListItem6 = new MainActivityListItem("Bulbs");
+        ArrayList<MainActivityListItem> mainActivityList = new ArrayList<MainActivityListItem>();
+        MainActivityListItem mainActivityListItem1 = new MainActivityListItem("TV's");
+        MainActivityListItem mainActivityListItem2 = new MainActivityListItem("Refrigerator's");
+        MainActivityListItem mainActivityListItem3 = new MainActivityListItem("Air Conditioners");
+        MainActivityListItem mainActivityListItem4 = new MainActivityListItem("Microwave");
+        MainActivityListItem mainActivityListItem5 = new MainActivityListItem("Washing Machine");
+        MainActivityListItem mainActivityListItem6 = new MainActivityListItem("Bulbs");
 //        //MainActivityListItem mainActivityListItem7 = new MainActivityListItem("Chimney");
 //        //MainActivityListItem mainActivityListItem8 = new MainActivityListItem("Cooler");
-//        mainActivityList.add(mainActivityListItem1);
-//        mainActivityList.add(mainActivityListItem2);
-//        mainActivityList.add(mainActivityListItem3);
-//        mainActivityList.add(mainActivityListItem4);
-//        mainActivityList.add(mainActivityListItem5);
-//        mainActivityList.add(mainActivityListItem6);
+        mainActivityList.add(mainActivityListItem1);
+        mainActivityList.add(mainActivityListItem2);
+        mainActivityList.add(mainActivityListItem3);
+        mainActivityList.add(mainActivityListItem4);
+        mainActivityList.add(mainActivityListItem5);
+        mainActivityList.add(mainActivityListItem6);
 //        //mainActivityList.add(mainActivityListItem7);
         //mainActivityList.add(mainActivityListItem8);
-        //final MainActivityListAdapter listAdapter = new MainActivityListAdapter(this, mainActivityList);
-        mAdapter = new MainActivityListAdapter(this,getNavItems())
+        final MainActivityListAdapter listAdapter = new MainActivityListAdapter(this, mainActivityList);
         mRecycleView.setAdapter(listAdapter);
         //To Add Floating Action bar when we will have the listview ready.
         /*RecyclerView recyclerView = (RecyclerView) findViewById(android.R.id.list);
