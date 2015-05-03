@@ -14,12 +14,20 @@ import java.util.ArrayList;
 public class MainActivityListAdapter extends RecyclerView.Adapter<MainActivityListAdapter.ViewHolder> {
 
     private Context context;
+<<<<<<< HEAD
     ArrayList<MainActivityListItem> mDataSet;
 
+=======
+    private String Titles[];
+>>>>>>> origin/master
     public static class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
         // each data item is just a string in this case
-        public TextView mTitle;
         Context mContext;
+        public TextView mTitle;
+<<<<<<< HEAD
+        Context mContext;
+=======
+>>>>>>> origin/master
         public ViewHolder(View view,Context c) {
             super(view);
             mContext = c;
@@ -30,6 +38,7 @@ public class MainActivityListAdapter extends RecyclerView.Adapter<MainActivityLi
 
         @Override
         public void onClick(View v) {
+<<<<<<< HEAD
             //Toast.makeText(context,"Item Clicked is:"+MainActivity,Toast.LENGTH_SHORT);
             Toast mToast;
             int position=getPosition();
@@ -40,6 +49,11 @@ public class MainActivityListAdapter extends RecyclerView.Adapter<MainActivityLi
                     break;
             }
             
+=======
+            Toast.makeText(getClass(),"Item Clicked is:" + MainActivity.na[getPosition()-1],Toast.LENGTH_SHORT).show();
+            int id=getPosition();
+
+>>>>>>> origin/master
 
         }
     }

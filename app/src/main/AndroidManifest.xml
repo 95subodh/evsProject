@@ -39,7 +39,7 @@
         android:theme="@style/AppTheme" >
         <activity
             android:name="project.is.IrVerde.ActivityLogin"
-            android:label="@string/title_activity_login"
+            android:label="Ir Verde"
             android:windowSoftInputMode="adjustResize|stateHidden" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
