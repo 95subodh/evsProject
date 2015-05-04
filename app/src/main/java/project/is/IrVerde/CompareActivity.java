@@ -58,7 +58,7 @@ public class CompareActivity extends ActionBarActivity implements NavigationDraw
         mainActivityList.add(mainActivityListItem6);
         //mainActivityList.add(mainActivityListItem7);
         //mainActivityList.add(mainActivityListItem8);
-        final MainActivityListAdapter listAdapter = new MainActivityListAdapter(this, mainActivityList);
+        final MainActivityListAdapter2 listAdapter = new MainActivityListAdapter2(this, mainActivityList);
         mRecycleView.setAdapter(listAdapter);
         //To Add Floating Action bar when we will have the listview ready.
         /*RecyclerView recyclerView = (RecyclerView) findViewById(android.R.id.list);
