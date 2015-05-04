@@ -36,9 +36,29 @@ public class MainActivityListAdapter extends RecyclerView.Adapter<MainActivityLi
             Toast mToast;
             int position=getPosition();
             switch (position){
-                case 0: mToast = Toast.makeText(mContext,"item 0 clicked",Toast.LENGTH_LONG);mToast.show();
-                    Intent intent = new Intent(mContext, CompareActivity.class);
-                    mContext.startActivity(intent);
+                case 0: //mToast = Toast.makeText(mContext,"item 0 clicked",Toast.LENGTH_LONG);mToast.show();
+                    Intent intent0 = new Intent(mContext, CompareActivity.class);
+                    mContext.startActivity(intent0);
+                    break;
+                case 1:
+                    Intent intent1 = new Intent(mContext, CompareActivity.class);
+                    mContext.startActivity(intent1);
+                    break;
+                case 2:
+                    Intent intent2 = new Intent(mContext, CompareActivity.class);
+                    mContext.startActivity(intent2);
+                    break;
+                case 3:
+                    Intent intent3 = new Intent(mContext, CompareActivity.class);
+                    mContext.startActivity(intent3);
+                    break;
+                case 4:
+                    Intent intent4 = new Intent(mContext, CompareActivity.class);
+                    mContext.startActivity(intent4);
+                    break;
+                case 5:
+                    Intent intent5 = new Intent(mContext, CompareActivity.class);
+                    mContext.startActivity(intent5);
                     break;
             }
             
@@ -64,8 +84,7 @@ public class MainActivityListAdapter extends RecyclerView.Adapter<MainActivityLi
         // create a new view
 
         //RecyclerView.Adapter
-        View v = LayoutInflater.from(parent.getContext())
-                .inflate(R.layout.activity_main_list_item, parent, false);
+        View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.activity_main_list_item, parent, false);
         // set the view's size, margins, paddings and layout parameters
         //TextView mTitleTextView = (TextView) v.findViewById(R.id.title);
         ViewHolder vh = new ViewHolder(v,context);

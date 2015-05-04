@@ -27,7 +27,7 @@ public class CompareActivity extends ActionBarActivity implements NavigationDraw
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main_topdrawer);
+        setContentView(R.layout.activity_main_topdrawer2);
         mToolbar = (Toolbar) findViewById(R.id.toolbar_actionbar);
         setSupportActionBar(mToolbar);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
@@ -102,10 +102,12 @@ public class CompareActivity extends ActionBarActivity implements NavigationDraw
     @Override
     public void onNavigationDrawerItemSelected(int position) {
         Toast.makeText(this, "Menu item selected -> " + position, Toast.LENGTH_SHORT).show();
-        if(position==0){
+        String className = this.getClass().getSimpleName();
+        if(position==0 && className!="MainActivity"){
 //            Intent home = new Intent(this,MainActivity.class);
-//            home.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+            //home.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
 //            startActivity(home);
+            //super.onBackPressed();
         }
         else if (position==1){
             Intent about = new Intent(this,About.class);

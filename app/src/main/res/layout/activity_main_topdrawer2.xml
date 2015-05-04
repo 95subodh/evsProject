@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer"
+    android:layout_width="match_parent"
+    android:fitsSystemWindows="true"
+    android:layout_height="match_parent">
+
+    <project.is.IrVerde.ScrimInsetsFrameLayout
+        android:id="@+id/scrimInsetsFrameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        app:insetForeground="#29000000"
+        android:elevation="10dp"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+    </project.is.IrVerde.ScrimInsetsFrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/toolbar_actionbar"
+            layout="@layout/toolbar_default"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <!--<Spinner-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="@dimen/abc_action_bar_default_height_material"-->
+            <!--android:drawSelectorOnTop="true"-->
+            <!--android:entries="@array/items"></Spinner>-->
+        <!--<Spinner android:id="@+id/spinner"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:drawSelectorOnTop="true"-->
+            <!--android:prompt="@string/spin"-->
+            <!--android:entries="@array/items" />-->
+
+        <FrameLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:clickable="true"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/listView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@android:color/transparent"/>
+
+            <project.is.IrVerde.FloatingActionButton
+                android:id="@+id/fab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|right"
+                android:layout_margin="16dp"
+                android:src="@drawable/ic_action_up"
+                fab:fab_colorNormal="@color/material_blue_500"
+                fab:fab_colorPressed="@color/material_blue_600"
+                fab:fab_colorRipple="@color/material_blue_grey_800"
+                fab:fab_type="normal"/>
+
+        </FrameLayout>
+
+    </LinearLayout>
+    <!-- android:layout_marginTop="?android:attr/actionBarSize"-->
+
+    <fragment
+        android:id="@+id/fragment_drawer"
+        android:name="project.is.IrVerde.NavigationDrawerFragment"
+        android:layout_width="@dimen/navigation_drawer_width"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:layout="@layout/fragment_navigation_drawer"/>
+
+</android.support.v4.widget.DrawerLayout>
