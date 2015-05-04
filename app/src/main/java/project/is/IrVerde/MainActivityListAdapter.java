@@ -38,32 +38,32 @@ public class MainActivityListAdapter extends RecyclerView.Adapter<MainActivityLi
             switch (position){
                 case 0: //mToast = Toast.makeText(mContext,"item 0 clicked",Toast.LENGTH_LONG);mToast.show();
                     Intent intent0 = new Intent(mContext, CompareActivity.class);
-                    intent0.putExtra("a",0);
+                    intent0.putExtra("a","0");
                     mContext.startActivity(intent0);
                     break;
                 case 1:
                     Intent intent1 = new Intent(mContext, CompareActivity.class);
-                    intent1.putExtra("a",1);
+                    intent1.putExtra("a","1");
                     mContext.startActivity(intent1);
                     break;
                 case 2:
                     Intent intent2 = new Intent(mContext, CompareActivity.class);
-                    intent2.putExtra("a",2);
+                    intent2.putExtra("a","2");
                     mContext.startActivity(intent2);
                     break;
                 case 3:
                     Intent intent3 = new Intent(mContext, CompareActivity.class);
-                    intent3.putExtra("a",3);
+                    intent3.putExtra("a","3");
                     mContext.startActivity(intent3);
                     break;
                 case 4:
                     Intent intent4 = new Intent(mContext, CompareActivity.class);
-                    intent4.putExtra("a",4);
+                    intent4.putExtra("a","4");
                     mContext.startActivity(intent4);
                     break;
                 case 5:
                     Intent intent5 = new Intent(mContext, CompareActivity.class);
-                    intent5.putExtra("a",5);
+                    intent5.putExtra("a","5");
                     mContext.startActivity(intent5);
                     break;
             }

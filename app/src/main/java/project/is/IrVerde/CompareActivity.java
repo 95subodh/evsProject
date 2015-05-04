@@ -39,7 +39,7 @@ public class CompareActivity extends ActionBarActivity implements NavigationDraw
         if(extras!=null){
             String value = extras.getString("a");
         }
-        
+
         //setting data in it.
         ArrayList<MainActivityListItem> mainActivityList = new ArrayList<MainActivityListItem>();
         MainActivityListItem mainActivityListItem1 = new MainActivityListItem("1");
